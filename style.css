@@ -15,6 +15,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.5;
+  background-color: black;
 }
 
 a {
@@ -32,7 +33,6 @@ ul {
 .container {
   max-width: 1440px;
   width: 100%;
-  border: 2px solid blue;
 }
 
 .bg-img {
@@ -44,11 +44,40 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-clip: content-box;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo img {
+  background-color: #fff;
+  max-width: 200px;
+  width: 100%;
+}
+
+.image-credit {
+  color: #fff;
+  text-align: center;
+}
+
+.jump-to-form {
+  margin-bottom: 32px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.image-credit p {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 16px;
 }
 
 .form-container {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #d4d0d0;
   color: #000;
   display: flex;
@@ -66,19 +95,29 @@ ul {
 
   .container {
     height: 90vh;
-    border: 2px solid red;
     display: flex;
+    border: 1px solid blue;
   }
 
   .bg-img {
     height: 100%;
-    flex-grow: 1.1;
+    width: 30%;
     background-size: contain;
   }
 
+  .image-credit p {
+    position: relative;
+    bottom: -15vh;
+  }
+
+  .image-credit div {
+    display: none;
+  }
+
   .form-container {
+    min-height: 0;
     height: 100%;
-    flex-grow: 3;
+    width: 70%;
   }
 }
 
