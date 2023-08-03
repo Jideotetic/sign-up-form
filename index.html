@@ -22,7 +22,7 @@
             </a>
           </div>
           <p>
-            Background photo by
+            Background Photo by
             <a
               href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
               >Halie West</a
@@ -36,69 +36,76 @@
         </div>
       </div>
       <div class="form-container" id="form">
-        <div class="message">
-          <p>
-            This is not real online service! You know you need something like
-            this in your life to help you realize your deepest dreams. Sign up
-            <em>now</em> to get started
-          </p>
-          <p>You <em>know</em> you want to.</p>
-        </div>
-        <form action="#" method="post" id="form">
+        <h1>Sign Up</h1>
+
+        <p class="message">
+          This is not real online service! You know you need something like this
+          in your life to help you realize your deepest dreams. Sign up
+          <em>now</em> to get started
+        </p>
+
+        <form action="#" method="post">
           <div class="info">
             <p>Let's do this!</p>
-            <ul>
-              <li>
-                <label for="first_name">
-                  FIRST NAME
-                  <br />
-                  <input type="text" name="first_name" id="first_name" />
-                </label>
-              </li>
-              <li>
-                <label for="last_name">
-                  LAST NAME
-                  <br />
-                  <input type="text" name="last_name" id="last_name" />
-                </label>
-              </li>
-              <li>
-                <label for="email">
-                  Email
-                  <br />
-                  <input type="email" name="email" id="email" />
-                </label>
-              </li>
-              <li>
-                <label for="number">
-                  PHONE NUMBER
-                  <br />
-                  <input type="tel" name="number" id="number" />
-                </label>
-              </li>
-              <li>
-                <label for="password">
-                  PASSWORD
-                  <br />
-                  <input type="password" name="password" id="password" />
-                </label>
-              </li>
-              <li>
-                <label for="password_confirm">
-                  CONFIRM PASSWORD
-                  <br />
-                  <input
-                    type="password"
-                    name="password_confirm"
-                    id="password_confirm" />
-                </label>
-              </li>
-            </ul>
           </div>
+          <ul>
+            <li>
+              <label for="first_name">
+                FIRST NAME
+                <br />
+                <input type="text" name="first_name" id="first_name" required />
+              </label>
+            </li>
+            <li>
+              <label for="last_name">
+                LAST NAME
+                <br />
+                <input type="text" name="last_name" id="last_name" required />
+              </label>
+            </li>
+            <li>
+              <label for="email">
+                Email
+                <br />
+                <input type="email" name="email" id="email" required />
+              </label>
+            </li>
+            <li>
+              <label for="number">
+                PHONE NUMBER
+                <br />
+                <input type="tel" name="number" id="number" required />
+              </label>
+            </li>
+            <li>
+              <label for="password">
+                PASSWORD
+                <br />
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  class="error"
+                  required />
+              </label>
+            </li>
+            <li>
+              <label for="password_confirm">
+                CONFIRM PASSWORD
+                <br />
+                <input
+                  type="password"
+                  name="password_confirm"
+                  id="password_confirm"
+                  class="error"
+                  required />
+              </label>
+            </li>
+            <button type="submit">Create Account</button>
+          </ul>
         </form>
         <div>
-          <button type="submit">Create Account</button>
-          <p>Already have an account? <a href="#">Log in</a></p>
+          <p>Already have an account? <a class="login" href="#">Log in</a></p>
         </div>
       </div>
     </div>

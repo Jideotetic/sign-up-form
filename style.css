@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 :root {
   box-sizing: border-box;
@@ -13,8 +13,8 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
   background-color: black;
 }
 
@@ -37,13 +37,14 @@ ul {
 
 .bg-img {
   height: 100vh;
-  background-image: url('bg-img.jpg');
+  background-image: url("bg-img.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  position: relative;
 }
 
 .logo {
@@ -71,8 +72,8 @@ ul {
 
 .image-credit p {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  right: 0;
   bottom: 16px;
 }
 
@@ -82,32 +83,79 @@ ul {
   color: #000;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
+}
+
+.form-container > div,
+.message,
+h1 {
+  padding-left: 48px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.message {
+  margin-bottom: 16px;
+}
+
+form {
+  background-color: #fff;
+  padding: 16px 48px;
+  box-shadow: 1px 1px 5px black;
+  margin-bottom: 32px;
+}
+
+.info > p {
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+ul {
+  max-width: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+li {
+  margin-bottom: 16px;
+}
+
+input {
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px;
+}
+
+button {
+  background-color: #596d48;
+  padding: 10px 32px;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.login {
+  color: #596d48;
 }
 
 @media screen and (min-width: 768px) {
   body {
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .container {
-    height: 90vh;
+    height: 100%;
     display: flex;
-    border: 1px solid blue;
+    margin: 0 auto;
   }
 
   .bg-img {
     height: 100%;
-    width: 30%;
+    width: 25%;
     background-size: contain;
-  }
-
-  .image-credit p {
-    position: relative;
-    bottom: -15vh;
   }
 
   .image-credit div {
@@ -117,7 +165,7 @@ ul {
   .form-container {
     min-height: 0;
     height: 100%;
-    width: 70%;
+    width: 75%;
   }
 }
 
